@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+	<script type="text/javascript" src="../resource/js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="../resource/js/chat.js"></script>
+	<script type="text/javascript" src="../resource/js/index.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../resource/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../resource/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../resource/css/index.css">
+</head>
+<body>
+	<input type="hidden" name="" value="admin" id="username">
+	<div class="chat-container" style="height:400px"></div>
+	<div class="my_chat">
+		<input type="text" name="" id="txtChat">
+		<input type="button" name="Send" value="Send" onclick="sendMessage()" >
+	</div>
+	<div class="chat_show_button">
+		<input type="button" name="Send" value="Show Chat" onclick="showPopUpChat()" >
+	</div>
+	<div class="chat_container">
+		<div class="popup-box chat-popup popup-box-on" id="qnimate">
+    		<div class="popup-head">
+				<div class="popup-head-left pull-left">
+					<img src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" alt="iamgurdeeposahan"> Gurdeep Osahan
+				</div>
+				<div class="popup-head-right pull-right">
+						<button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+                </div>
+			</div>
+			<div class="popup-messages">
+				<div class="direct-chat-messages">
+					<div class="chat-box-single-line">
+						<abbr class="timestamp">October 8th, 2015</abbr>
+					</div>
+					<!-- Message. Default to the left -->
+                    <div class="direct-chat-msg doted-border">
+	                    <div class="direct-chat-info clearfix">
+	                        <span class="direct-chat-name pull-left">Osahan</span>
+	                    </div>
+	                    <!-- /.direct-chat-info -->
+	                     <img alt="message user image" src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+	                    <div class="direct-chat-text">
+	                        Hey bro, how’s everything going ?
+	                    </div>
+						<div class="direct-chat-info clearfix">
+	                        <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+	                    </div>
+	                    <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+					<div class="chat-box-single-line">
+						<abbr class="timestamp">October 9th, 2015</abbr>
+					</div>
+					<!-- Message. Default to the left -->
+                    <div class="direct-chat-msg doted-border">
+                        <div class="direct-chat-info clearfix">
+                        	<span class="direct-chat-name pull-left">Osahan</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img alt="iamgurdeeposahan" src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                        	Hey bro, how’s everything going ?
+                        </div>
+					    <div class="direct-chat-info clearfix">
+                        	<span class="direct-chat-timestamp pull-right">3.36 PM</span>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="chat-box-single-line">
+						<abbr class="timestamp">October 9th, 2015</abbr>
+					</div>
+					<!-- Message. Default to the left -->
+                    <div class="direct-chat-msg doted-border">
+                        <div class="direct-chat-info clearfix">
+                        	<span class="direct-chat-name pull-left">Osahan</span>
+                        </div>
+                        <!-- /.direct-chat-info -->
+                        <img alt="iamgurdeeposahan" src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                        	Hey bro, how’s everything going ?
+                        </div>
+					    <div class="direct-chat-info clearfix">
+                        	<span class="direct-chat-timestamp pull-right">3.36 PM</span>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg --> 
+                </div>
+			</div>
+			<div class="popup-messages-footer">
+				<textarea id="status_message" placeholder="Type a message..." rows="10" cols="40" name="message"></textarea>
+			</div>
+			</div>
+	  </div>
+	</div>
+</body>
+</html>
